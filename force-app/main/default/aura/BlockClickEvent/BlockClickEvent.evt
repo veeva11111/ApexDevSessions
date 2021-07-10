@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Event template">
+    <!--attribute to carry the label value of the block-->
+    <aura:attribute name="value" type="String"/>
+    </aura:event>

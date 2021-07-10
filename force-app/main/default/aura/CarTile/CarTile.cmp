@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+	<aura:attribute name="car" type="object" access="public"
+                    default="{
+                    'sObjectType' : 'Car__c',
+                    'Name' : 'Sujit',
+                    'MyOwnField' : 'My Field Example',
+                             'Picture__c' : '/resourcce/cars/luxury/ford_mustang.jpeg'}"/>
+    <lightning:button variant="neutral" class="tile">
+    <div style="{# 'background-image:url('+v.car.Picture__c+')'}" class="innertile">
+        <div class ="lower-third">
+        <h1 class="slds-truncate">{v.car.Contact__r.Name}</h1>
+        </div>
+        </div>
+    </lightning:button>
+</aura:component>

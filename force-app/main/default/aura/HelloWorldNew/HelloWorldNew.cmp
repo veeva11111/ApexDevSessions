@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="greeting" type="String" default="Namaste"/>
+    <aura:attribute name="numberTest" type="Integer" default="12345"/>
+    <aura:attribute name="booleanTest" type="Boolean" default="false"/>
+    <lightning:card footer="Hello card footer" title="{!v.greeting}">
+        <p class="slds-p-horizontal_small">
+            {!v.greeting}   {!v.numberTest}
+            {!v.booleanTest}
+            <lightning:button variant="brand-outline" label="{!v.greeting}" title="Brand action"/>
+        </p>
+    </lightning:card>
+    <aura:iteration items="1,2,3,4,5" var="item">
+        Current Item: {!item}
+    </aura:iteration>
+</aura:component>
